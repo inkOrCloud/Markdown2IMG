@@ -10,7 +10,7 @@ from mirai import Image
 
 img_path = './plugins/Markdown2IMG/output.'+ img_config['format']
 
-@register(name="Markdown2IMG", description="将markdown文本转为图片输出", version="0.1", author="inkorcloud")
+@register(name="Markdown2IMG", description="将markdown文本转为图片输出", version="0.2", author="inkorcloud")
 class Markdown2IMG(BasePlugin):
     def __init__(self, host: APIHost):
         super().__init__(host)
