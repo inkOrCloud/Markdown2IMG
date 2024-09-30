@@ -22,7 +22,7 @@ class Markdown2IMG(BasePlugin):
         html_front 
         + markdown(
             text=ctx.event.response_text, 
-            extensions=["mdx_math"], 
+            extensions=["mdx_math","fenced_code"], 
             extension_configs=markdown_config
             )
         + html_end)
